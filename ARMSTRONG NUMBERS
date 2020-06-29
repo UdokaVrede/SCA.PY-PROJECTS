@@ -1,0 +1,42 @@
+#FUNCTION TO CHECK THAT A NUMBER IS AN ARMSTRONG NUMBER
+
+#function initialization
+def armstrong():
+
+#accepting the number from user into "n"
+    n=input()
+
+#making "n" a list
+    arms_list=list(n)
+
+#Initializing the length of n as an integer value into p
+    p=int(len(n))
+
+#Initializing variable "ind"
+    ind=0
+
+#Initializing the for loop 
+    for r in range(p):
+
+#making the string values in list to numbers then calling each with it's index value in r and initializing the value to "y"
+        y=int(arms_list[r])
+
+#computation of values in x and p and assigning it to x
+        x=y**p
+
+#summing the value in x with the value in ind
+        ind=ind+x
+
+#condition check at the end of the loop on ind and int
+    if ind == int(n):
+
+#output if condition is true
+        print(str(n),"is an armstrong number")
+    else:
+
+#output if condition is false
+        print(str(n), 'is not an armstrong number, have sense')
+ 
+  
+#calling the function
+armstrong()
