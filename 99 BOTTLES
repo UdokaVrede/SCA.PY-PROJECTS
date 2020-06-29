@@ -1,0 +1,38 @@
+#PROGRAM TO OUTPUT THE LINES OF THE SONG,"99 BOTTLES"
+
+
+#Initializing the variable 'bottles'
+bottles=99
+
+
+#Initializing the for loop
+for i in range(bottles):
+
+
+#display to screen
+  print('\t',bottles,"green bottles standing on the wall" '\n', "If 1 green bottle should accidentally fall down")
+
+
+#reduction of the value in bottles by 1
+  bottles-= 1
+
+
+#condition check on bottles
+  if bottles >=2:
+
+
+#output if condition is true
+      print('\t','There are', bottles,"green bottles standing on the wall")
+
+
+#second conditional check
+  elif bottles==1:
+
+
+#output if condition is true
+      print('There is only',bottles,"green bottle standing on the wall")
+
+
+#if the two conditions are false, output the print statement.
+  else:
+        print("There are no green bottles standing on the wall ")
