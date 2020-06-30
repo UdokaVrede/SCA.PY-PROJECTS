@@ -4,13 +4,15 @@
 #Initializing the variable 'bottles'
 bottles=99
 
+#outputting the values in the print statement
+print('\t','There are', bottles,"green bottles standing on the wall")
 
 #Initializing the for loop
 for i in range(bottles):
 
 
 #display to screen
-  print('\t',bottles,"green bottles standing on the wall" '\n', "If 1 green bottle should accidentally fall down")
+  print('\t',bottles,"green bottles standing on the wall",'\n','\n', "If 1 green bottle should accidentally fall down?",'\n')
 
 
 #reduction of the value in bottles by 1
@@ -30,9 +32,9 @@ for i in range(bottles):
 
 
 #output if condition is true
-      print('There is only',bottles,"green bottle standing on the wall")
+      print('\t','There is',bottles,"green bottle standing on the wall")
 
 
 #if the two conditions are false, output the print statement.
   else:
-        print("There are no green bottles standing on the wall ")
+        print('\t',"There would be no green bottles standing on the wall!!!! ")
