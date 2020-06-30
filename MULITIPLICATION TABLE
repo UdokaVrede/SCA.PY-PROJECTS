@@ -1,0 +1,8 @@
+print('Enter the number of tables you want to see to the top and left:')
+user_input=input()
+num=int(user_input)
+for i in range (1,num+1):
+    for n in range(1,num+1):
+        prod=i*n
+        print(str(prod),end=" ")
+    print('\n')
