@@ -1,0 +1,20 @@
+
+def fibonnaci_for():
+    print('Enter the length of your sequence')
+    user_input=input()
+    idn=int(user_input)
+    st=0
+    nd=1
+    if idn <= 0:
+        print('Enter a number greater than zero')
+    else:
+        print(st,'\n',nd)
+        for i in range(2,idn+1):
+            num=st+nd
+            print(num,'\n')
+            st=nd
+            nd=num
+            
+fibonnaci_for()
+        
+        
