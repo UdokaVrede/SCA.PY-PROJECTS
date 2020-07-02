@@ -1,0 +1,23 @@
+
+def recur():
+
+    red= print("Enter the length of your sequence") 
+    num = int(input())
+    print('\n')
+
+    if num <= 0:  
+        print("Please enter a positive number")  
+    else:  
+        for n in range(num):  
+            print(fibonnaci_recursive(n),'\n')
+       
+       
+def fibonnaci_recursive(idn):
+    if idn <= 1:
+        return idn
+    else:
+        return(fibonnaci_recursive(idn-1)+fibonnaci_recursive(idn-2))
+        
+recur()
+        
+        
