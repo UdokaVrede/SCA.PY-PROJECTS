@@ -1,0 +1,19 @@
+     
+        
+story=['I', 'love', 'travelling',',','reading',',', 'singing', 'and', 'bathing the rain',',','I would also love to go to', 'Singapore', 'someday in the future']
+print('What 3 things do you love doing')
+hobby1,hobby2,hobby3,hobby4=input().split( )
+print()
+
+story[2]=hobby1
+story[4]=hobby3
+story[6]=hobby4
+story[8]=hobby2
+
+
+print('Where would you love to go')
+place=input()
+story[11]=place
+
+print(*story, sep=' ')
+
