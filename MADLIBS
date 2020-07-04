@@ -1,19 +1,41 @@
-     
+import sys
         
 story=['I', 'love', 'travelling',',','reading',',', 'singing', 'and', 'bathing the rain',',','I would also love to go to', 'Singapore', 'someday in the future']
-print('What 4 things do you love')
-hobby1,hobby2,hobby3,hobby4=input().split( )
-print()
 
-story[2]=hobby1
-story[4]=hobby3
-story[6]=hobby4
-story[8]=hobby2
+def madlibs():
+    print('What 4 things do you love doing, seperated with spaces')
+    hobby1,hobby2,hobby3,hobby4=input().split( )
 
+    story[2]=hobby1
+    story[4]=hobby3
+    story[6]=hobby4
+    story[8]=hobby2
 
-print('Where would you love to go')
-place=input()
-story[11]=place
+    print('Where would you love to go')
+    place=input()
+    story[11]=place
 
-print(*story, sep=' ')
+    print('\n',*story, sep=' ')
+    
+def game():
 
+    madlibs()
+
+    while True:
+    
+        print('\n','Do you want to play the game again? (yes/no):')
+        opinion=input()
+        print()
+        
+        if opinion == 'yes':
+            madlibs()
+            print()
+            
+        elif opinion == 'no':
+            print('Goodbye')
+            sys.exit()
+            
+        else:
+            print('you have entered a wrong input')
+        
+game()
