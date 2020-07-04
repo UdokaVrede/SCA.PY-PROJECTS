@@ -1,7 +1,7 @@
      
         
 story=['I', 'love', 'travelling',',','reading',',', 'singing', 'and', 'bathing the rain',',','I would also love to go to', 'Singapore', 'someday in the future']
-print('What 4 things do you love doing')
+print('What 4 things do you love')
 hobby1,hobby2,hobby3,hobby4=input().split( )
 print()
 
