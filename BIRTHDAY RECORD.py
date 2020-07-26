@@ -3,20 +3,23 @@ birthdays={'Mum': 'Aug 15th',
            'Bambi' : 'Apr 11th'}
            
 while True:
+    
     name=input('Enter a name or leave blank to quit: ')
+    
     if name == '':
         print('The birthdays in the record are:')
         print(birthdays)
-        
         break
     
     if name in birthdays:
         print(name,'is born on ' + birthdays[name])
+        
     else:
         print('Sorry the name '+ name +' is not valid','\n')
         
-        print('do you wish to update the record?')
-        user=input('press yes or no to quit: ')
+        print('Do you wish to update the record?')
+        user=input('Enter yes or no to quit: ')
+        
         if user == 'yes':
             birthdate=input('Enter the birthdate: ')
             birthdays[name]=birthdate
