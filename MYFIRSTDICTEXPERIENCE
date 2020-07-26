@@ -1,0 +1,6 @@
+Myfirstdict={'bread': 'coconut_bread',
+            'cake':'Vanilla_cake',
+            'biscuit':'shortbread'}
+            
+print(Myfirstdict)
+print('I love eating '+Myfirstdict['bread']+ ' and tea')
