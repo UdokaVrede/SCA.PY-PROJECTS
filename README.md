@@ -1,4 +1,4 @@
-# SHE-CODES-AFRICA.PY-PROJECTS
+# SCA
 Projects done as an mentee at She codes africa. PYTHON  PART
 
 Project done from June - August,2020.
